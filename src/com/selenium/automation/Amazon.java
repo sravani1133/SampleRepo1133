@@ -15,6 +15,7 @@ public class Amazon
 		RemoteWebDriver driver =new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.Amazon.com");
+		System.out.println("updated by sravani");
 		driver.manage().timeouts().implicitlyWait(4000,	TimeUnit.SECONDS );
 	WebElement	us=driver.findElementByXPath("//input[@type='email']");
 	us.clear();
